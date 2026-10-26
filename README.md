@@ -24,10 +24,3 @@ Historial de versiones en [CHANGELOG.md](CHANGELOG.md).
 
 > Nota del colaborador: usar Node 22 o superior.
 
-## Datos de demostración (50+ filas por tabla)
-
-`data/backup_artesanias_legado.sql` y `data/artesanias_legado.db` contienen ≥50 filas en cada tabla (excepto taller: se mantienen 3 talleres y crece el número de artesanos)
-(proveedor 50, taller 3 —con 20 artesanos cada uno—, artesano 60, insumo 60, pieza 120, produccion_pieza 55, cliente 60, venta 60,
-venta_detalle 62, encargo 55) más 50 usuarios que `server.js` crea al iniciar sin `ADMIN_PASSWORD`
-(admin/Admin#2026, operador01…, consulta01…). Para regenerar: `node scripts/poblar-demo.js`
-(usa `data/demo-data.sql`, generado por `backend-java/tools/generar_datos_demo.py`). Prueba: `tests/datos-demo.test.js`.
